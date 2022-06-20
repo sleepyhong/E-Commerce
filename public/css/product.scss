@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 9;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    @extend html;
+}
+
+div#product {
+    float: left;
+
+    div {
+        float: left;
+
+        img {
+            float: left;
+            max-width: 20%; 
+            height: auto;
+        }
+
+        span {
+            float: right;
+            width: 80%;
+        }
+    }
+
+    form {
+        float: right;
+    }
+}
+
+form#review-form {
+    textarea {
+        width: 85%;
+        height: 100px;
+    }
+
+    button {
+        float: right;
+        width: 10%;
+        height: 100px;
+    }
+}
+
+div#reviews {
+    table {
+        width: 100%;
+    }
+}

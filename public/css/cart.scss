@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 9;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    @extend html;
+}
+
+div#cart {
+    float: left;
+    width: 100%;
+
+    span {
+        float: right;
+    }
+}
+
+form {
+    float: right;
+    
+    p {
+        input {
+            float: right;
+        }
+
+        select {
+            float: right;
+        }
+    }
+
+    button {
+        float: right;
+    }
+}
