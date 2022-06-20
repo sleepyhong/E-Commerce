@@ -14,7 +14,7 @@ const auth_user = async function(req, res, next) {
         }
         catch(error) {
             res.status(401);
-            res.send(e);
+            res.send(error);
         }
     }
 };
@@ -33,7 +33,7 @@ const auth_admin = async function(req, res, next) {
         }
         catch(error) {
             res.status(401);
-            res.send(e);
+            res.send(error);
         }
     }
     else {
