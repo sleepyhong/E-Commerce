@@ -23,6 +23,7 @@
                 {{/if}}
             </div>
         </nav>
+        {{#if itemExist}}
         <div id="cart">
             <h2>Your Items</h2>
             <table class="container table table-striped">
@@ -74,5 +75,8 @@
             </p>
             <button type="submit" class="btn btn-dark">Proceed to Checkout</button>
         </form>
+        {{else}}
+        <h2>You don't have any items</h2>
+        {{/if}}
     </body>
 </html>

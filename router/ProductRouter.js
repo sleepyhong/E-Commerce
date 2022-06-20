@@ -119,11 +119,12 @@ router.get('/cart', auth_admin, async function(req, res) {
             itemInfo.push(info);
             totalPrice += info['quantity'] * info['price'];
         }
-    
+
         res.render('cart', {
             loggedIn: req.cookies.JWT ? true : false,
             items: itemInfo,
-            totalPrice: totalPrice.toFixed(2)
+            totalPrice: totalPrice.toFixed(2),
+            itemExist: itemInfo.length ? true : false
         });
     }
     catch (error) {
