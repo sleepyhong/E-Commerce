@@ -107,7 +107,7 @@ router.post('/review/:productId', auth_user, async function(req, res) {
     }
 });
 
-router.get('/cart', auth_admin, async function(req, res) {
+router.get('/cart', [auth_admin, auth_user], async function(req, res) {
     try {
         const items = store.get('cartItems') ? store.get('cartItems') : [];
         const itemInfo = [];

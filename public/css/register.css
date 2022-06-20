@@ -10,7 +10,25 @@ html, body {
   height: 100%;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form {
+  width: 50%;
+}
+
 button {
-  float: right;
+  width: 100%;
+}
+
+span {
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=register.css.map */

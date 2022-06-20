@@ -17,6 +17,13 @@ div#cart {
     float: left;
     width: 100%;
 
+    table {
+        img {
+            max-width: 100%; 
+            height: auto;
+        }
+    }
+
     span {
         float: right;
     }

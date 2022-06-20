@@ -4,7 +4,12 @@ const jwt = require("jsonwebtoken");
 const User = require("../model/User");
 
 router.get('/login', function(req, res) {
-    res.render('login');
+    if (req.cookies.JWT) {
+        res.redirect('/home');
+    }
+    else {
+        res.render('login');
+    }
 });
 
 router.post('/login', async function(req, res) {

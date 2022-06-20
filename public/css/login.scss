@@ -11,8 +11,20 @@ html {
 
 body {
     @extend html;
+
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
 }
 
 button {
-    float: right;
+    width: 100%;
+}
+
+span {
+    width: 100%;
+    text-align: center;
 }
